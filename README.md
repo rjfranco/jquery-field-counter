@@ -24,6 +24,6 @@ $('#some-textarea').counter(165, {
 });
 ```
 
-The alt_placement can be any valid sizzle selector (ie '#box > .child-thing'), in case you're wondering.
+The alt_placement can be any valid sizzle selector (ie '#box > .child-thing'), or a jquery object ( like $('#someplace').parent() ) in case you're wondering.
 
 This should limit the amount of allowed characters to 140, and create a span above the element that counts how many characters you have left.
