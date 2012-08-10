@@ -1,5 +1,7 @@
-# Created by Ramiro Jr. Franco
-# See MIT-LICENSE.txt if you're concerned about that.
+###
+  Created by Ramiro Jr. Franco
+  See MIT-LICENSE.txt if you're concerned about that.
+###
 
 $ = jQuery
 
@@ -41,12 +43,12 @@ $.fn.extend
       if settings.alt_placement
         alt = $(settings.alt_placement)
         alt.after span
-        counter = alt.prev().find('.remaining').first()
+        counter = alt.next().find('.remaining').first()
       else
         field.after span
-        counter = field.prev().find('.remaining').first()
+        counter = field.next().find('.remaining').first()
 
       # Start make updates
       updateCount(field, counter, limit)
       field.keyup ->
-        updateCount(field, counter, limit )
+        updateCount(field, counter, limit)
