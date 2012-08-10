@@ -7,7 +7,6 @@ $.fn.extend
   counter: (count, options) ->
     limit = 140
     settings =
-      counter: 140
       alt_placement: false
       regular_color: '#48a029'
       low_color: '#ffe400'
