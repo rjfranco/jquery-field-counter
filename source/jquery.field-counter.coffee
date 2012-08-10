@@ -16,9 +16,6 @@ $.fn.extend
     settings = $.extend settings, options
     if count then limit = count
 
-    log = (msg) ->
-      console?.log msg if settings.debug
-
     # Define how updates are made
     updateCount = (field, counter, limit) ->
       if field.val().length > limit
@@ -43,10 +40,10 @@ $.fn.extend
       # Set counter field
       if settings.alt_placement
         alt = $(settings.alt_placement)
-        alt.before span
+        alt.after span
         counter = alt.prev().find('.remaining').first()
       else
-        field.before span
+        field.after span
         counter = field.prev().find('.remaining').first()
 
       # Start make updates

@@ -17,7 +17,7 @@ Finally, there are a couple of other options that you can pass into the plugin.
 
 ```javascript
 $('#some-textarea').counter(165, {
-  alt_placement: '#other-element',    // Places the counter text before some other element
+  alt_placement: '#other-element',    // Places the counter text after some other element
   regular_color: '#555',              // Default is #48a029
   low_color: '#222',                  // Default is #ffe400
   out_color: 'red'                    // Default is #e31616
